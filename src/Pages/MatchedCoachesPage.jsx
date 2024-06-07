@@ -14,7 +14,7 @@ const MatchedCoachesPage = () => {
       try {
         const fetchedCoaches = await Promise.all(
           state.coachIds.map(async (id) => {
-            const response = await axios.get(`http://localhost:4000/api/v1/users/getCoach/${id}`);
+            const response = await axios.get(`${process.env.REACT_APP_Base_URL}/users/getCoach/${id}`);
             return response.data.coach;
           })
         );

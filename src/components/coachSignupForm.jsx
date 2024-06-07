@@ -33,7 +33,8 @@ const CoachSignupForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:4000/api/v1/users/coachSignup', formData);
+      // const response = await axios.post('http://localhost:4000/api/v1/users/coachSignup', formData);
+      const response = await axios.post(`${process.env.REACT_APP_Base_URL}/users/coachSignup`, formData);
       console.log(response.data);
     } catch (error) {
       console.error(error.response.data.message);
