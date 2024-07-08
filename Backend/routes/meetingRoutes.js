@@ -10,6 +10,7 @@ router.post('/schedule', async (req, res) => {
   const emailBody = `
     <p>Hello,</p>
     <p>You've scheduled a meeting on ${date} at ${time}.</p>
+    <p>Meeting URL: <a href="https://meet.google.com/chy-kicz-iwo">https://meet.google.com/chy-kicz-iwo</a></p>
     <p>Thank you!</p>
   `;
 
