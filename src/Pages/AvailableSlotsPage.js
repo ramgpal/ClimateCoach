@@ -20,8 +20,8 @@ const AvailableSlotsPage = () => {
     if (selectedSlot) {
       try {
         // Hardcoded client and coach email addresses
-        const clientEmail = 'ramgpal912@gmail.com';
-        const coachEmail = 'ramgp053@gmail.com';
+        const clientEmail = 'climate.client123@gmail.com';
+        const coachEmail = 'climate.client123@gmail.com';
         
         // Call the schedule API with the selected slot and hardcoded email addresses
         await axios.post(`${process.env.REACT_APP_Base_URL}/meetings/schedule`, {

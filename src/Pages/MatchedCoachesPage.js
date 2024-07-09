@@ -7,7 +7,7 @@ const MatchedCoachesPage = () => {
   const navigate = useNavigate();
   const [coaches, setCoaches] = useState([]);
   const [loading, setLoading] = useState(true);
-  const dummyPhotoUrl = ""; // Add a placeholder image URL if needed
+  const dummyPhotoUrl = ""; 
 
   useEffect(() => {
     const fetchCoaches = async () => {
